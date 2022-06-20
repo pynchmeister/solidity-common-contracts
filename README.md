@@ -1,0 +1,1 @@
+# solidity-common-contracts
