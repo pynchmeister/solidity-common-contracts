@@ -1,5 +1,10 @@
 // SPDX-License-Identifier: MIT
 
+/**
+* @title Escrow
+* @dev Basic Escrow contract for fund transfers between two parties trustlessly
+*/
+
 pragma solidity ^0.8.10;
 
 contract Escrow {
