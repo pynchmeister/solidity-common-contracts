@@ -57,7 +57,7 @@ contract StakingRewardMechanism {
             rewards[account];
     }
 
-    modifier updateReward(address account) {
+    modifier updateRewardAmount(address account) {
         rewardPerTokenStored = rewardPerToken();
         lastUpdateTime = block.timestamp;
 
@@ -78,7 +78,7 @@ contract StakingRewardMechanism {
         stakingToken.transfer(msg.sender, _amount);
     }
 
-    function getReward() external updateReward(msg.sender) {
+    function getRewardAmount() external updateReward(msg.sender) {
         uint reward = rewards[msg.sender];
         rewards[msg.sender] = 0;
         rewardsToken.transfer(msg.sender, reward);
