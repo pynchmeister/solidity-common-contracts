@@ -7,7 +7,8 @@
 
 pragma solidity ^0.8.10;
 
-contract BasicTimelock {error NotOwnerError();
+contract BasicTimelock {
+    error NotOwnerError();
     error AlreadyQueuedError(bytes32 txId);
     error TimestampNotInRangeError(uint blockTimestamp, uint timestamp);
     error NotQueuedError(bytes32 txId);
