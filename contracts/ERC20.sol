@@ -1,4 +1,4 @@
-pragma solidity >=0.8.0;
+pragma solidity ^0.8.10;
 
 /// @dev Do not manually set balances without updating totalSupply, as the sum of all user balances must not exceed it.
 abstract contract ERC20 {
