@@ -1,4 +1,11 @@
 // SPDX-License-Identifier: MIT
+
+/**
+* @title Dutch Auction for NFTs (ERC721)
+* @dev Dutch Auction for Non-Fungible Tokens: https://en.wikipedia.org/wiki/Dutch_auction
+* @info An Auction which begins with a high asking price and lowers until someone accepts the price
+*/
+
 pragma solidity ^0.8.10;
 
 interface IERC721 {
